@@ -4,8 +4,7 @@ import argparse
 parser = argparse.ArgumentParser()
 
 # Add the optional "file_path" argument
-parser.add_argument("file_path", nargs="?",
-                    help="The path of the password list")
+parser.add_argument("file_path", nargs="?", help="The path of the password list")
 
 # Parse the arguments
 args = parser.parse_args()
@@ -24,12 +23,10 @@ with open(file_path, "r") as f:
     lines = f.readlines()
 
 # Ask the user if they want to uppercase the first letter of each word
-uppercase_first_letter = input(
-    "Do you want to uppercase the first letter of each word? (y/n) ")
+uppercase_first_letter = input("Do you want to uppercase the first letter of each word? (y/n) ")
 
 # Ask the user which characters they want to add to the end of each word
-characters_to_add = input(
-    "Enter the characters to add to the end of each word (e.g. '1! 2@ 6*'): ")
+characters_to_add = input("Enter the characters to add to the end of each word (e.g. '1! 2@ 6*'): ")
 
 # Split the characters to add into a list
 characters_to_add = characters_to_add.split()
@@ -51,3 +48,4 @@ with open("modified_list.txt", "w") as f:
                 modified_word += character
             # Write the modified word to the output file
             f.write(modified_word + " \n")
+       

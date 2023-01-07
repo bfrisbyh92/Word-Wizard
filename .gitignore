@@ -1,0 +1,6 @@
+stash
+/stash/*
+bin
+inlcude
+lib
+pyenv.cfg

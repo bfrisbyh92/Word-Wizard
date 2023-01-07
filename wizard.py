@@ -5,21 +5,19 @@ from colorama import Fore, Style
 import pyfiglet
 
 word_wizard = "The Word-Wizard"
-my_github = 'https://github.com/bfrisbyh92         ----------      BF'
+my_github = 'https://github.com/bfrisbyh92   ----------   Brendan Frisby'
 
 # Use pyfiglet to convert the text to ASCII art
 word_wizard_art = pyfiglet.figlet_format(word_wizard)
-
 # Use colorama to add color to the ASCII art
 colored_word_wizard = Fore.BLUE + word_wizard_art + Style.RESET_ALL
-
 # Print the colored ASCII art
 print(colored_word_wizard)
 
 # Use the "small" font in pyfiglet for Github
 banner = pyfiglet.figlet_format(my_github, font="small")
-print(banner)
-print(my_github)
+# print(banner)
+# print(my_github)
 
 # Open an image file
 image = Image.open("YourBoyDarth.png")
@@ -77,6 +75,7 @@ the_author = "BHF 1992"
 the_author_art = pyfiglet.figlet_format(the_author, font='small')
 colored_the_author = Fore.RED + the_author_art + Style.RESET_ALL
 print(colored_the_author)
+
 
 
 
